@@ -26,15 +26,12 @@
 
 using namespace std;
 
-const int MAX = (int)2e5 + 1;
+const int MAX = (int)2e6 + 1;
 const int MOD = (int)1e9 + 7;
 
 class Solution {
 public:
     void solve() {
-        int tc; cin >> tc;
-        while(tc--) {
-        }
     }
 };
 int main() {
