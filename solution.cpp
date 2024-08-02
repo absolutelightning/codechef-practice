@@ -32,11 +32,17 @@ const int MOD = (int)1e9 + 7;
 class Solution {
 public:
     void solve() {
+        int tc; cin >> tc;
+        while(tc--) {
+            int n; cin >> n;
+
+        }
     }
 };
+
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
+    cin.tie(NULL); cout.tie(NULL);
     auto solution = new Solution();
     solution->solve();
     delete(solution);
