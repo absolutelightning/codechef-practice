@@ -60,7 +60,7 @@ public:
 
                 // added in x and added in prev
                 op = (a[i] + x) ^ (a[i - 1] + x);
-                dp[i][1] = max(dp[i][1], dp[i - 1][1]+op);
+                dp[i][1] = max(dp[i][1], dp[i - 1][1] + op);
             }
             cout << max(dp[n - 1][0], dp[n - 1][1]) << endl;
         }
