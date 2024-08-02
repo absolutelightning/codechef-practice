@@ -48,13 +48,13 @@ public:
     void solve() {
         int n, k;
         cin >> n >> k;
-        vector<vector<int>> matrix(n, vector<int>(n));
+        vector<vector<int> > matrix(n, vector<int>(n));
         for (int i = 0; i < n; ++i)
             for (int j = 0; j < n; ++j)
                 cin >> matrix[i][j];
 
-        vector<vector<int>> row_minimums(n, vector<int>(n - k + 1));
-        vector<vector<int>> result(n - k + 1, vector<int>(n - k + 1));
+        vector<vector<int> > row_minimums(n, vector<int>(n - k + 1));
+        vector<vector<int> > result(n - k + 1, vector<int>(n - k + 1));
 
         for (int i = 0; i < n; ++i) {
             row_minimums[i] = sliding_window_minimum(matrix[i], k);
