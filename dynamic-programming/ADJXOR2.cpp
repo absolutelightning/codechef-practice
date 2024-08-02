@@ -47,7 +47,7 @@ public:
             }
             for(int i = 1; i < n; i++) {
                 // not added x in prev and cur
-                ll op = a[i]^a[i-1];
+                ll op = a[i] ^ a[i-1];
                 dp[i][0] = max(dp[i][0], dp[i - 1][0] + op);
 
                 // not added x in cur but added in prev
